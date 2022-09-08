@@ -1,0 +1,177 @@
+/* To reset default browser design*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /*10px, 10px/16px*/
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: #555;
+}
+
+/********************************/
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(57, 130, 175);
+  height: 9.6rem;
+  padding: 4.8rem 0 4.8rem 0;
+}
+
+.logo {
+  height: 9.6rem;
+}
+
+/*****************************/
+
+.main-nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: rgb(194, 236, 255);
+}
+
+.heading {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 1.05;
+  color: #333;
+  margin-bottom: 2.4rem;
+}
+
+.Btn:link,
+.Btn:visited {
+  background-color: rgb(57, 130, 175);
+  display: inline-block;
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 15px;
+}
+
+/**************************/
+
+.company-section {
+  background-color: rgb(188, 217, 228);
+  padding: 9.6rem;
+}
+
+.company {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+
+.companylogo {
+  width: 100%;
+}
+
+.about-company {
+  font-size: 2rem;
+  line-height: 1.05;
+  margin-bottom: 4.8rem;
+}
+
+.profileBlock {
+  text-align: center;
+  font-style: bold;
+  font-size: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 70px 0;
+}
+
+.profPic {
+  border-radius: 50%;
+}
+
+.footer {
+  padding: 1.2rem 0;
+  border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 2.4rem;
+}
+
+.social-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+  margin-bottom: 1.2rem;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+}
+
+.address {
+  margin-bottom: 1rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}

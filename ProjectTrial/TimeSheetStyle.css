@@ -1,0 +1,29 @@
+.Login,
+.Logout {
+  margin: 40px;
+  margin-left: 75px;
+  margin-right: 75px;
+  padding: 30px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 15px;
+  border: solid rgb(184, 182, 182);
+  border-radius: 15px;
+  background-color: aliceblue;
+}
+
+#log {
+  margin-top: 10px;
+  padding: 4px;
+  border-radius: 9px;
+}
+
+.Total {
+  display: flex;
+  justify-content: center;
+}
+
+#submit {
+  border-radius: 9px;
+  padding: 4px;
+}

@@ -1,0 +1,50 @@
+.flex1 {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px;
+  margin: 30px;
+}
+.History,
+.apply,
+.Holidays {
+  height: 450px;
+  width: 350px;
+  padding-left: 50px;
+  padding-top: 50px;
+  border: transparent;
+  border-radius: 30px;
+  background-color: rgb(221, 238, 253);
+  font-size: medium;
+}
+
+.applycontents {
+  padding: 5px;
+}
+
+.tablecontent {
+  height: 200px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+table {
+  border: solid white;
+  background-color: white;
+}
+
+th,
+tr {
+  background-color: rgb(221, 238, 253);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+td {
+  padding: 5px;
+}
+
+tbody {
+  overflow: auto;
+}

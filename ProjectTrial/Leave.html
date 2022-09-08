@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/StyleCompany.css" />
+    <link rel="stylesheet" href="LeaveStyle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="home.html">
+        <img class="logo" alt="company logo" src="Images/companyLogo.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="timesheet.html">Timesheet</a></li>
+          <li><a class="main-nav-link" href="Leave.html">Apply Leave</a></li>
+          <li><a class="main-nav-link" href="bs.html">Logout</a></li>
+
+          <li>
+            <a href="profile.html"
+              ><img class="logo" alt="company logo" src="Images/profile.jpg"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="flex1">
+        <div class="History">
+          <h2>Leave history</h2>
+          <table>
+            <th>From To</th>
+            <th>Category</th>
+            <th>Status</th>
+            <tr>
+              <td>25/06/2022</td>
+              <td>Earned</td>
+              <td>Approved</td>
+            </tr>
+          </table>
+        </div>
+        <div class="apply">
+          <h2>Apply Leave</h2>
+          <br>
+          <div class="applycontents">
+          <label>From</label>
+          <input type="date" required />
+          <br /> <br>
+          <label>To</label>
+          <input type="date" required />
+          <br /> <br>
+          <label>Leave Category</label>
+          <select name="leave" id="leave">
+            <option>--Select--</option>
+            <option value="earned">Earned</option>
+            <option value="special">Special</option>
+            <option value="sick">Sick</option>
+            <option value="maternity">Maternity</option>
+            <option value="vacation">Vacation</option>
+          </select>
+          <br /> <br>
+          <input type="submit" />
+        </div>
+        </div>
+        <div class="Holidays" style="overflow-x:auto;">
+          <h2>Holiday List</h2>
+          <div class="tablecontent">
+          <table>
+            <th>Holiday name</th>
+          <th>Date</th>
+          <tbody>
+      <tr>
+        <td>New Year</td>  <td>01 Jan</tr>
+      </tr>
+      <tr>
+        <td>Makara Sankranti</td>  <td>14 Jan</tr>
+      </tr>
+      <tr>
+        <td>Republic Day</td>  <td>26 Jan</tr>
+      </tr>
+      <tr>
+        <td>Maha Shivaratri</td>  <td>1 Mar</tr>
+      </tr>
+      <tr>
+        <td>Independence Day</td>  <td>15 Aug</tr>
+      </tr>
+      <tr>
+        <td>Ganesh Chaturthi</td>  <td>30 Aug</tr>
+      </tr>
+      <tr>
+        <td>Mahalaya Amavasye</td>  <td>25 Sep</tr>
+      </tr>
+      <tr>
+        <td>Vijaya Dashami</td>  <td>05 Oct</tr>
+      </tr>
+      <tr>
+        <td>Kannada Rajyothsava</td>  <td>01 Nov</tr>
+      </tr>
+      <tr>
+        <td>Christmas Day</td>  <td>25 Dec</tr>
+      </tr>
+      <tr>
+        <td>New Year</td>  <td>01 Jan</tr>
+      </tr>
+      <tr>
+        <td>Makara Sankranti</td>  <td>14 Jan</tr>
+      </tr>
+      <tr>
+        <td>Republic Day</td>  <td>26 Jan</tr>
+      </tr>
+    </tbody></table>
+  </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/StyleCompany.css" />
+    <link rel="stylesheet" href="TimeSheetStyle.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="home.html">
+        <img class="logo" alt="company logo" src="Images/companyLogo.png" />
+      </a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="Leave.html">Timesheet</a></li>
+          <li><a class="main-nav-link" href="#">Apply Leave</a></li>
+          <li><a class="main-nav-link" href="bs.html">Logout</a></li>
+
+          <li>
+            <a href="profile.html"
+              ><img class="logo" alt="company logo" src="Images/profile.jpg"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="Login">
+        <h2>Login entry</h2>
+        <hr />
+        <br />
+        <div class="DateTime">
+          <section>
+            <label>Date* : </label>
+            <input type="date" id="logindate" required />
+          </section>
+          <br />
+          <section>
+            <label>Time* : </label>
+            <input type="time" id="logintime" required />
+          </section>
+          <br />
+
+          <button type="submit" onclick="LoginDate()" id="log">
+            Logged In
+          </button>
+          <label id="demo"></label>
+        </div>
+      </div>
+
+      <!--Logout -->
+
+      <div class="Logout">
+        <h2>Logout entry</h2>
+        <hr />
+        <br />
+        <div class="DateTime">
+          <section>
+            <label>Date* : </label>
+            <input type="date" id="logoutdate" required />
+          </section>
+          <br />
+          <section>
+            <label>Time* : </label>
+            <input type="time" id="logouttime" required />
+          </section>
+          <br />
+          <input
+            type="submit"
+            onclick="LogoutDateTime()"
+            value="Logged Out"
+            id="log"
+          />
+          <label id="printlogout"></label>
+        </div>
+      </div>
+
+      <!--Total time-->
+      <div class="Total">
+        <button id="submit" type="submit" onclick="CalculateTime()">
+          Submit
+        </button>
+        <label id="Time"></label>
+      </div>
+    </main>
+
+    <!--JavaScript-->
+
+    <script>
+      function LoginDate() {
+        var x = document.getElementById("logindate");
+        var y = document.getElementById("logintime");
+        document.getElementById("demo").innerHTML = x.value + " " + y.value;
+      }
+
+      function LogoutDateTime() {
+        var d = document.getElementById("logoutdate");
+        var t = document.getElementById("logouttime");
+        document.getElementById("printlogout").innerHTML =
+          d.value + " " + t.value;
+      }
+
+      function CalculateTime() {
+        var a = document.getElementById("logintime");
+        var b = document.getElementById("logouttime");
+        var c = a - b;
+        var tm = Math.abs(Math.round(c));
+        console.log(c.value);
+        document.getElementById("Time").innerHTML = c.value;
+      }
+    </script>
+  </body>
+</html>
